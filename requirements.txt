@@ -1,0 +1,24 @@
+# Keep CrewAI pinned as required
+crewai==0.130.0
+crewai-tools==0.47.1
+
+# CrewAI commonly pulls litellm; pin it to a known compatible band to stop deep resolution
+litellm>=1.72.0,<1.76.0
+
+# LLM client version compatible with litellm>=1.72
+openai>=1.68.2,<2.0.0
+
+# API
+fastapi==0.110.3
+uvicorn[standard]==0.30.1
+python-dotenv==1.0.1
+
+# PDF parsing
+pypdf==4.2.0
+
+# Pydantic (FastAPI 0.110 prefers v2)
+pydantic>=2.6,<3
+
+# Utilities
+numpy>=1.26,<2
+pandas>=2.2,<2.3
